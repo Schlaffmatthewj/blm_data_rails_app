@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_18_040926) do
+ActiveRecord::Schema.define(version: 2020_09_18_041842) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 2020_09_18_040926) do
     t.string "black_deaths", null: false
     t.string "black_likely", null: false
     t.string "latinx_likely", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "api_v1_victims", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "age", null: false
+    t.date "when", null: false
+    t.string "place", null: false
+    t.text "details", null: false
+    t.string "photo", default: "https://assets.change.org/photos/6/fd/qd/UefDqdBUZOcYZpY-800x450-noPad.jpg?1526960855"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
