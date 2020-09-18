@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @api_v1_location.name %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @api_v1_location.total %>
+</p>
+
+<p>
+  <strong>White total:</strong>
+  <%= @api_v1_location.white_total %>
+</p>
+
+<p>
+  <strong>Latinx total:</strong>
+  <%= @api_v1_location.latinx_total %>
+</p>
+
+<p>
+  <strong>Black total:</strong>
+  <%= @api_v1_location.black_total %>
+</p>
+
+<p>
+  <strong>Black pop:</strong>
+  <%= @api_v1_location.black_pop %>
+</p>
+
+<p>
+  <strong>Black deaths:</strong>
+  <%= @api_v1_location.black_deaths %>
+</p>
+
+<p>
+  <strong>Black likely:</strong>
+  <%= @api_v1_location.black_likely %>
+</p>
+
+<p>
+  <strong>Latinx likely:</strong>
+  <%= @api_v1_location.latinx_likely %>
+</p>
+
+<%= link_to 'Edit', edit_api_v1_location_path(@api_v1_location) %> |
+<%= link_to 'Back', api_v1_locations_path %>
